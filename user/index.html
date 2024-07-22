@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User - Bus Tracking System</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMn7IaS1ttRAD4am7RSkEL9vcXe15jbZg"></script>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Panel - DKTE Society's Textile and Engineering Institute, Ichalkaranji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .bus-button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DKTE Society's Textile and Engineering Institute, Ichalkaranji</h1>
+        <p>Dist: Kolhapur (MAHARASHTRA) INDIA</p>
+    </header>
+    <div id="buttonsContainer"></div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+        .bus-button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>DKTE Society's Textile and Engineering Institute, Ichalkaranji</h1>
+    <h2>Dist: Kolhapur (MAHARASHTRA) INDIA</h2>
+    <div id="buttons">
+        <!-- Buttons for each bus -->
+        <script>
+            for (let i = 1; i <= 30; i++) {
+                document.write(`<button class="bus-button" onclick="showBusLocation(${i})">Bus ${i}</button>`);
+            }
+        </script>
+    </div>
+    <div id="map"></div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
